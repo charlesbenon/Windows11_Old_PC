@@ -14,25 +14,29 @@ It was probably related to missing the Trusted Platform Module (TPM) and UEFI se
 
 Create the USB installation support from Microsoft ISO.
 
-From a running Windows, Rufus can be used, it is very intuitive: [https://rufus.ie/en/]
+From a running Windows, [**Rufus**](https://rufus.ie/en/) can be used, it is very intuitive.
 
-Windows 11 ISO file can be downloaded directly from Microsoft website: [https://www.microsoft.com/en-us/software-download/windows11]
+Windows 11 ISO file can be downloaded directly from [**Microsoft website**]([https://www.microsoft.com/en-us/software-download/windows11)
 
-From Linux, I have used Ventoy: [https://www.ventoy.net/en/index.html]
+From Linux, I have used [**Ventoy**](https://www.ventoy.net/en/index.html)
 
 # 3/ Bypass hardware requirements (TPM, SecureBoot, RAM)
 
 When the USB key is created, boot the new computer with by selecting USB a boot device (F2 > Boot or F11 should both work except for some motherboard manufacturers when the computer is booting).
 
-Windows installation will start and at the beginning, type "ALT + F10", which will open a terminal.
+Windows installation will start and at the beginning, type **ALT + F10**, which will open a terminal.
 
-From there, open the registry editor with: regedit
+From there, open the registry editor with:
+```
+regedit
+```
 
-Navigate to HKEY_LOCAL_MACHINE\SYSTEM\Setup and create 3 DWORDs values called:
-
+Navigate to **HKEY_LOCAL_MACHINE\SYSTEM\Setup** and create 3 DWORDs values called:
+```
 -BypassTPMCheck
 -BypassSecureBootCheck
 -BypassRAMCheck
+```
 
 Set their Value Data to 1 to enable them.
 
@@ -40,8 +44,10 @@ Set their Value Data to 1 to enable them.
 
 Later in the installation process, it will ask for a Microsoft acccount.
 
-In case you don't have one or just don't want to use it, it can be bypassed by typing "ALT + F10" and the following command from the terminal:
+In case you don't have one or just don't want to use it, it can be bypassed by typing **ALT + F10** and the following command from the terminal:
+```
 start ms-cxh:localonly
+```
 
 This will open a new window for a local account to be created (Username, Password and 3 questions to recover the access).
 
@@ -52,11 +58,11 @@ When the system is installed, update Windows latest packages as well as the driv
 From there, apply the following changes which I found very good to reduce the CPU and memory usage:
 -Adjust Visual Effects: Search for "Adjust the appearance and performance of Windows" and select "Adjust for best performance"
 
--Manage Startup Apps: Press Ctrl + Shift + Esc to open Task Manager, go to the 4th tab (Startup apps) and disable unnecessary apps to speed up boot times.
+-Manage Startup Apps: Press **Ctrl + Shift + Esc** to open Task Manager, go to the 4th tab (Startup apps) and disable unnecessary apps to speed up boot times.
 I have just left SecurityHealthSystray (showing security status, security itself is managed via system services)
 
 -Disable Visual Effects:  Search Visual Effects and disable "Transparency effects" and "Animations effects"
 
 -Remove Windgets: that needs to be done via PowerShell (search for Windows Powershell): winget uninstall "Windows Web Experience Pack"
 
-When it is done, check the task manager (Ctrl + Shift + Esc) for CPU, Memory and disk usage:
+When it is done, check the task manager (**Ctrl + Shift + Esc**) for CPU, Memory and disk usage:
