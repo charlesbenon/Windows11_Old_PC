@@ -6,8 +6,7 @@ This laptop is working perfectly but only with 4GB of RAM and 2 CPU cores (I jus
 
 This hardware configuration shouldn't be a limitation with Windows 11 but I have tried without applying any work around and it would just show a prompt after the first installation reboot.
 
-Windows 11 minimum hardware: [https://www.microsoft.com/en-us/windows/windows-11-specifications]
-["**Windows 11 minimum hardware**"](https://www.microsoft.com/en-us/windows/windows-11-specifications)
+[**Windows 11 minimum hardware**](https://www.microsoft.com/en-us/windows/windows-11-specifications)
 
 It was probably related to missing the Trusted Platform Module (TPM) and UEFI secure boot capable features which my old laptop does not have.
 
