@@ -53,10 +53,12 @@ This will open a new window for a local account to be created (Username, Passwor
 # 5/ Optimize Windows 11
 
 When the system is installed, update Windows latest packages as well as the drivers if you have specific versions for Windows 11 (those can be found from the hardware vendors websites).
-<img width="466" height="296" alt="image" src="https://github.com/user-attachments/assets/10a19623-2a65-4447-bb07-8b3db8d42a6c" />
+
+<kbd><img width="466" height="296" alt="image" src="https://github.com/user-attachments/assets/10a19623-2a65-4447-bb07-8b3db8d42a6c" /></kbd>
 
 For the drivers, you check if all the devices are recognized by the operating system by going to the Device Manager:
 <img width="305" height="596" alt="image" src="https://github.com/user-attachments/assets/fa39d12d-3fdc-4a54-9279-5d7484b280ce" />
+
 As you can see, some of my device are still unknown (yellow mark).
 
 From there, apply the following changes which I found very good to reduce the CPU and memory usage:
@@ -73,3 +75,4 @@ From there, apply the following changes which I found very good to reduce the CP
 <img width="1014" height="137" alt="powershell-delete" src="https://github.com/user-attachments/assets/4cb5c553-c8f9-407d-8af5-3eb7f4514281" />
 
 When it is done, check the task manager (**Ctrl + Shift + Esc**) for CPU, Memory and disk usage:
+<img width="916" height="535" alt="image" src="https://github.com/user-attachments/assets/31d25df4-d5c4-45e3-a10f-d4d7c8802bb3" />
