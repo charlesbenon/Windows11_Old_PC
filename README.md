@@ -2,7 +2,7 @@
 
 I have an old laptop from 2011 (Acer X52J) from where I was running Linux but lately I needed a Windows OS available for my online exams with PearsonVue (meaning no VM allowed).
 
-This laptop is working perfectly but only with 4GB of RAM and 2 CPU cores (I just replaced the Hard drive by a SSD)
+This laptop is working perfectly but only with 4GB of RAM and 2 CPU cores (I just replaced the Hard drive by a SSD).
 
 This hardware configuration shouldn't be a limitation (
 [**Windows 11 minimum hardware**](https://www.microsoft.com/en-us/windows/windows-11-specifications)) with Windows 11 but I have tried without applying any work around and it would just show a prompt after the first installation reboot.
@@ -53,13 +53,12 @@ This will open a new window for a local account to be created (Username, Passwor
 When the system is installed, update Windows latest packages as well as the drivers if you have specific versions for Windows 11 (those can be found from the hardware vendors websites).
 
 From there, apply the following changes which I found very good to reduce the CPU and memory usage:
--Adjust Visual Effects: Search for "Adjust the appearance and performance of Windows" and select "Adjust for best performance"
+* Adjust Visual Effects: Search for "Adjust the appearance and performance of Windows" and select "Adjust for best performance"
 
--Manage Startup Apps: Press **Ctrl + Shift + Esc** to open Task Manager, go to the 4th tab (Startup apps) and disable unnecessary apps to speed up boot times.
-I have just left SecurityHealthSystray (showing security status, security itself is managed via system services)
+* Manage Startup Apps: Press **Ctrl + Shift + Esc** to open Task Manager, go to the 4th tab (Startup apps) and disable unnecessary apps to speed up boot times (I have just left SecurityHealthSystray (showing security status, security itself is managed via system services)
 
--Disable Visual Effects:  Search Visual Effects and disable "Transparency effects" and "Animations effects"
+* Disable Visual Effects:  Search Visual Effects and disable "Transparency effects" and "Animations effects"
 
--Remove Windgets: that needs to be done via PowerShell (search for Windows Powershell): winget uninstall "Windows Web Experience Pack"
+* Remove Windgets: that needs to be done via PowerShell (search for Windows Powershell): winget uninstall "Windows Web Experience Pack"
 
 When it is done, check the task manager (**Ctrl + Shift + Esc**) for CPU, Memory and disk usage:
