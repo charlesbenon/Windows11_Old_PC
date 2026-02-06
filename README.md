@@ -4,9 +4,8 @@ I have an old laptop from 2011 (Acer X52J) from where I was running Linux but la
 
 This laptop is working perfectly but only with 4GB of RAM and 2 CPU cores (I just replaced the Hard drive by a SSD)
 
-This hardware configuration shouldn't be a limitation with Windows 11 but I have tried without applying any work around and it would just show a prompt after the first installation reboot.
-
-[**Windows 11 minimum hardware**](https://www.microsoft.com/en-us/windows/windows-11-specifications)
+This hardware configuration shouldn't be a limitation (
+[**Windows 11 minimum hardware**](https://www.microsoft.com/en-us/windows/windows-11-specifications)) with Windows 11 but I have tried without applying any work around and it would just show a prompt after the first installation reboot.
 
 It was probably related to missing the Trusted Platform Module (TPM) and UEFI secure boot capable features which my old laptop does not have.
 
@@ -16,9 +15,9 @@ Create the USB installation support from Microsoft ISO.
 
 From a running Windows, [**Rufus**](https://rufus.ie/en/) can be used, it is very intuitive.
 
-Windows 11 ISO file can be downloaded directly from [**Microsoft website**]([https://www.microsoft.com/en-us/software-download/windows11)
+Windows 11 ISO file can be downloaded directly from [**Microsoft website**](https://www.microsoft.com/en-us/software-download/windows11).
 
-From Linux, I have used [**Ventoy**](https://www.ventoy.net/en/index.html)
+From Linux, I have used [**Ventoy**](https://www.ventoy.net/en/index.html).
 
 # 3/ Bypass hardware requirements (TPM, SecureBoot, RAM)
 
@@ -31,14 +30,12 @@ From there, open the registry editor with:
 regedit
 ```
 
-Navigate to **HKEY_LOCAL_MACHINE\SYSTEM\Setup** and create 3 DWORDs values called:
+Navigate to **HKEY_LOCAL_MACHINE\SYSTEM\Setup** and create the following DWORDs values (by setting up the Value Data to 1):
 ```
--BypassTPMCheck
--BypassSecureBootCheck
--BypassRAMCheck
+BypassTPMCheck
+BypassSecureBootCheck
+BypassRAMCheck
 ```
-
-Set their Value Data to 1 to enable them.
 
 # 4/ Bypass online Microsoft account
 
