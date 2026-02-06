@@ -63,7 +63,7 @@ As you can see, some of my device are still unknown (yellow exclamation mark sho
 
 From there, apply the following changes which I found very good to reduce the CPU and memory usage:
 * Adjust Visual Effects: Search for "Adjust the appearance and performance of Windows" and select "Adjust for best performance"
-* 
+
 <kbd><img width="409" height="551" alt="image" src="https://github.com/user-attachments/assets/cd1959d8-22d2-4f14-8a18-0133593b1730" /></kbd>
 
 * Manage Startup Apps: Press **Ctrl + Shift + Esc** to open Task Manager, go to the 4th tab (Startup apps) and disable unnecessary apps to speed up boot times (I have just left SecurityHealthSystray (showing security status, security itself is managed via system services)
