@@ -59,7 +59,7 @@ When the system is installed, update Windows latest packages as well as the driv
 For the drivers, you check if all the devices are recognized by the operating system by going to the Device Manager:
 <kbd><img width="305" height="596" alt="image" src="https://github.com/user-attachments/assets/fa39d12d-3fdc-4a54-9279-5d7484b280ce" /></kbd>
 
-As you can see, some of my device are still unknown (yellow mark).
+As you can see, some of my device are still unknown (yellow exclamation mark showing in Other Device).
 
 From there, apply the following changes which I found very good to reduce the CPU and memory usage:
 * Adjust Visual Effects: Search for "Adjust the appearance and performance of Windows" and select "Adjust for best performance"
