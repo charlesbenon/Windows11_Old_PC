@@ -37,7 +37,7 @@ BypassTPMCheck
 BypassSecureBootCheck
 BypassRAMCheck
 ```
-<img width="625" height="369" alt="image" src="https://github.com/user-attachments/assets/77de4190-c454-4fd3-b7f7-b0a58b200212" />
+<kbd><img width="625" height="369" alt="image" src="https://github.com/user-attachments/assets/77de4190-c454-4fd3-b7f7-b0a58b200212" /></kbd>
 
 # 4/ Bypass online Microsoft account
 
@@ -57,22 +57,22 @@ When the system is installed, update Windows latest packages as well as the driv
 <kbd><img width="466" height="296" alt="image" src="https://github.com/user-attachments/assets/10a19623-2a65-4447-bb07-8b3db8d42a6c" /></kbd>
 
 For the drivers, you check if all the devices are recognized by the operating system by going to the Device Manager:
-<img width="305" height="596" alt="image" src="https://github.com/user-attachments/assets/fa39d12d-3fdc-4a54-9279-5d7484b280ce" />
+<kbd><img width="305" height="596" alt="image" src="https://github.com/user-attachments/assets/fa39d12d-3fdc-4a54-9279-5d7484b280ce" /></kbd>
 
 As you can see, some of my device are still unknown (yellow mark).
 
 From there, apply the following changes which I found very good to reduce the CPU and memory usage:
 * Adjust Visual Effects: Search for "Adjust the appearance and performance of Windows" and select "Adjust for best performance"
-<img width="409" height="551" alt="image" src="https://github.com/user-attachments/assets/cd1959d8-22d2-4f14-8a18-0133593b1730" />
+<kbd><img width="409" height="551" alt="image" src="https://github.com/user-attachments/assets/cd1959d8-22d2-4f14-8a18-0133593b1730" /></kbd>
 
 * Manage Startup Apps: Press **Ctrl + Shift + Esc** to open Task Manager, go to the 4th tab (Startup apps) and disable unnecessary apps to speed up boot times (I have just left SecurityHealthSystray (showing security status, security itself is managed via system services)
-<img width="877" height="430" alt="image" src="https://github.com/user-attachments/assets/80308cb9-7fd3-4fed-91d6-6e8d4fd3c135" />
+<kbd><img width="877" height="430" alt="image" src="https://github.com/user-attachments/assets/80308cb9-7fd3-4fed-91d6-6e8d4fd3c135" /></kbd>
 
 * Disable Visual Effects:  Search Visual Effects and disable "Transparency effects" and "Animations effects"
-<img width="463" height="290" alt="image" src="https://github.com/user-attachments/assets/e284845e-62f6-48ad-a8f0-4edcaea25c4f" />
+<kbd><img width="463" height="290" alt="image" src="https://github.com/user-attachments/assets/e284845e-62f6-48ad-a8f0-4edcaea25c4f" /></kbd>
 
 * Remove Windgets: that needs to be done via PowerShell (search for Windows Powershell): winget uninstall "Windows Web Experience Pack"
-<img width="1014" height="137" alt="powershell-delete" src="https://github.com/user-attachments/assets/4cb5c553-c8f9-407d-8af5-3eb7f4514281" />
+<kbd><img width="1014" height="137" alt="powershell-delete" src="https://github.com/user-attachments/assets/4cb5c553-c8f9-407d-8af5-3eb7f4514281" /></kbd>
 
 When it is done, check the task manager (**Ctrl + Shift + Esc**) for CPU, Memory and disk usage:
-<img width="916" height="535" alt="image" src="https://github.com/user-attachments/assets/31d25df4-d5c4-45e3-a10f-d4d7c8802bb3" />
+<kbd><img width="916" height="535" alt="image" src="https://github.com/user-attachments/assets/31d25df4-d5c4-45e3-a10f-d4d7c8802bb3" /></kbd>
