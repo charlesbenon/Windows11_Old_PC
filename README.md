@@ -67,6 +67,7 @@ From there, apply the following changes which I found very good to reduce the CP
 <kbd><img width="409" height="551" alt="image" src="https://github.com/user-attachments/assets/cd1959d8-22d2-4f14-8a18-0133593b1730" /></kbd>
 
 * Manage Startup Apps: Press **Ctrl + Shift + Esc** to open Task Manager, go to the 4th tab (Startup apps) and disable unnecessary apps to speed up boot times (I have just left SecurityHealthSystray (showing security status, security itself is managed via system services)
+
 <kbd><img width="877" height="430" alt="image" src="https://github.com/user-attachments/assets/80308cb9-7fd3-4fed-91d6-6e8d4fd3c135" /></kbd>
 
 * Disable Visual Effects:  Search Visual Effects and disable "Transparency effects" and "Animations effects"
